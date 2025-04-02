@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+label, select, button {
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#chart, #chart-likelihood {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+svg {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+rect {
+    transition: fill 0.3s ease;
+}
+
+rect:hover {
+    fill: orange;
+}
+
+circle {
+    fill: red;
+    transition: fill 0.3s ease;
+}
+
+circle:hover {
+    fill: blue;
+}

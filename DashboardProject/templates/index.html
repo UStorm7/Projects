@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="{{ url_for('static', filename='dashboard.js') }}" defer></script>
+</head>
+<body>
+    <h1>Data Visualization Dashboard</h1>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <label for="endyear-filter">End Year:</label>
+        <select id="endyear-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="topic-filter">Topic:</label>
+        <select id="topic-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="sector-filter">Sector:</label>
+        <select id="sector-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="region-filter">Region:</label>
+        <select id="region-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="pestle-filter">PEST:</label>
+        <select id="pestle-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="source-filter">Source:</label>
+        <select id="source-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="swot-filter">SWOT:</label>
+        <select id="swot-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="country-filter">Country:</label>
+        <select id="country-filter">
+            <option value="">All</option>
+        </select>
+
+        <label for="city-filter">City:</label>
+        <select id="city-filter">
+            <option value="">All</option>
+        </select>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <!-- Visualization Areas -->
+    <h2>Intensity by Topic</h2>
+    <div id="chart"></div>
+    
+    <h2>Likelihood vs Relevance</h2>
+    <div id="chart-likelihood"></div>
+</body>
+</html>
