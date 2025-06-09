@@ -13,7 +13,7 @@ This program uses the `bert-base-uncased` model to compute and compare semantic 
 ## Example Usage
 
 ```bash
-python assignment.py The cat is on the mat , A cat sits on the mat
+python BERT-SSA.py The cat is on the mat , A cat sits on the mat
 ```
 ## Dependencies
    - transformers
