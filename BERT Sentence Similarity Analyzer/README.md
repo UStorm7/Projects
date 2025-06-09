@@ -14,7 +14,7 @@ This program uses the `bert-base-uncased` model to compute and compare semantic 
 
 ```bash
 python assignment.py The cat is on the mat , A cat sits on the mat
-
+```
 ## Dependencies
    - transformers
 
@@ -25,7 +25,7 @@ python assignment.py The cat is on the mat , A cat sits on the mat
 Install with:
 ```bash
 pip install transformers torch numpy
-
+```
 ## Notes
    - The program uses AutoTokenizer and BertModel from Hugging Face.
 
