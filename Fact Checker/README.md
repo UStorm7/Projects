@@ -21,3 +21,16 @@ Use an LLM to return **YES** if an answer is factually correct for a given quest
 
 ```bash
 pip install torch transformers
+```
+
+▶️ Usage
+```bash
+python fact_checker.py "Who discovered gravity?" "Albert Einstein"
+```
+
+## Output
+NO
+
+⚠️ Notes
+- The output is case-sensitive and restricted strictly to YES or NO
+- Seed is fixed for reproducibility (torch.manual_seed(42)).
